@@ -5,13 +5,13 @@ const manageUserRouter = require('./routes/manage-users.routes')
 const manageGroupRouter = require('./routes/manage-groups.routes')
 
 require('dotenv').config()
-const cors = require('cors') 
+//const cors = require('cors') 
 
 const app = express()
 app.use(express.json())
 
 
-app.use(cors())
+//app.use(cors())
 // CORS
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
